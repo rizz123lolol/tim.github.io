@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My true self 🌈</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            animation: rainbowBackground 15s ease infinite;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            overflow: hidden; /* To handle mouse trail */
+        }
+
+        @keyframes rainbowBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            animation: rainbowText 5s infinite;
+        }
+
+        @keyframes rainbowText {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        img.placeholder {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 5px solid transparent;
+            border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+            animation: rotateBorder 10s infinite linear;
+        }
+
+        @keyframes rotateBorder {
+            0% { border-image-source: linear-gradient(0deg, red, orange, yellow, green, blue, indigo, violet); }
+            100% { border-image-source: linear-gradient(360deg, red, orange, yellow, green, blue, indigo, violet); }
+        }
+
+        /* Rainbow flag mouse trail */
+        .trail {
+            position: absolute;
+            pointer-events: none;
+            font-size: 24px;
+            animation: fadeOut 1s forwards;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my Hidden Gay Side! 🌈✨</h1>
+    
+
+    
+    <div class="section">
+        <h2>Gallery of Awesomeness, yay!! 🏳️‍🌈🏳️‍🌈🏳️‍🌈</h2>
+        <p>Replace these placeholders with your own images!</p>
+        <img class="placeholder" src="https://raw.githubusercontent.com/rizz123lolol/tim.github.io/refs/heads/main/2.webp" alt="Placeholder Image 1">
+        <img class="placeholder" src="https://raw.githubusercontent.com/rizz123lolol/tim.github.io/refs/heads/main/3.webp" alt="Placeholder Image 2">
+        <img class="placeholder" src="https://raw.githubusercontent.com/rizz123lolol/tim.github.io/refs/heads/main/4.webp" alt="Placeholder Image 3">
+
+    </div>
+    
+    <div class="section">
+        <h2>About Me</h2>
+        <p>Hey, I'm Timbear25! This is my hidden side where I embrace my true colors. 🌈 And show my real self ❤️. I have been hiding my gayness for a long time now. It had scared me to tell anyone that im gay. but now i realized. GAY IS OK!!! 🏳️‍🌈🏳️‍🌈🏳️‍🌈/ I am here to say that i AM GAY!!!</p>
+        <img class="placeholder" src="https://raw.githubusercontent.com/rizz123lolol/tim.github.io/refs/heads/main/1.PNG" alt="Profile Placeholder">
+    </div>
+    
+    <div class="section">
+        <h2>My Favorite Quotes, YAY!! 🏳️‍🌈🏳️‍🌈</h2>
+        <ul>
+            <li>"Be yourself; everyone else is already taken." - Oscar Wilde 🌟</li>
+            <li>"🏳️‍🌈🏳️‍🌈 Love is love! ❤️🧡💛💚💙💜"</li>
+            <li>"🏳️‍🌈🏳️‍🌈 Gay is ok!!! ️🧡💛💚💙💜""</li>
+        </ul>
+    </div>
+    
+    <script>
+        // Rainbow flag mouse trail
+        document.addEventListener('mousemove', function(e) {
+            const trail = document.createElement('div');
+            trail.className = 'trail';
+            trail.style.left = `${e.pageX}px`;
+            trail.style.top = `${e.pageY}px`;
+            trail.innerHTML = '🏳️‍🌈'; // Rainbow flag emoji
+            document.body.appendChild(trail);
+            
+            setTimeout(() => {
+                trail.remove();
+            }, 1000); // Remove after animation
+        });
+    </script>
+</body>
+</html>
